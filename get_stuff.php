@@ -1,17 +1,19 @@
 <?php
-include_once "header.php";
+include_once 'header.php';
 
-$op  = isset($_POST['op']) ? $_POST['op'] : "";
-$col = isset($_POST['col']) ? $_POST['col'] : "";
-$val = isset($_POST['val']) ? $_POST['val'] : "";
-if ($op == "get_stuff") {
+include_once $GLOBALS['xoops']->path('/modules/system/include/functions.php');
+$op = system_CleanVars($_REQUEST, 'op', '', 'string');
+$col = system_CleanVars($_REQUEST, 'col', '', 'string');
+$val = system_CleanVars($_REQUEST, 'val', '', 'string');
+
+if ('get_stuff' === $op) {
     $search_col = "{$col}_stuff";
-} elseif ($op == "get_cook") {
+} elseif ('get_cook' === $op) {
     $search_col = "{$col}_cook";
 } else {
     exit;
 }
-$sql    = "select `$search_col` from `" . $xoopsDB->prefix("tad_lunch2_data") . "` where `$col` = '$val' ";
+$sql = "select `$search_col` from `" . $xoopsDB->prefix('tad_lunch2_data') . "` where `$col` = '$val' ";
 $result = $xoopsDB->query($sql);
 
 list($data) = $xoopsDB->fetchRow($result);

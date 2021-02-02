@@ -1,4 +1,5 @@
 <?php
+xoops_loadLanguage('main', 'tadtools');
 //需加入模組語系
 define('_TAD_NEED_TADTOOLS', 'This module needs TadTools module. You can download TadTools from <a href="http://campus-xoops.tn.edu.tw/modules/tad_modules/index.php?module_sn=1" target="_blank">XOOPS EasyGO</a>.');
 
@@ -42,7 +43,7 @@ define('_MD_TADLUNCH2_CALORIE', 'Total Calories');
 define('_MD_TAD_LUNCH2_DATA_FORM', 'Nutritious Lunches Content Management');
 define('_MD_TAD_LUNCH2_DATA_IMPORT', 'Fast import');
 define('_MD_TAD_LUNCH2_DATA_IMPORT_FILE', 'Please upload the Excel file:');
-define('_MD_TAD_LUNCH2_DATA_IMPORT_FILE_DESC', 'Follow the example of the format <a href=\'demo.xls\'> </a> to upload');
+define('_MD_TAD_LUNCH2_DATA_IMPORT_FILE_DESC', 'Follow the example of the format <a href=\'demo.xlsx\'> </a> to upload');
 define('_MD_TAD_LUNCH2_DATA_IMPORT_OK', 'Import successful!');
 define('_MD_TAD_LUNCH2_DATA_MENU', '"%s "%s Menu');
 define('_MD_TAD_LUNCH2_DATA_SHORT_MENU', '%s Menu');

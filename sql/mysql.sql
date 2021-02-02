@@ -7,13 +7,13 @@ CREATE TABLE `tad_lunch2` (
   `lunch_factory_fax` varchar(255) NOT NULL default '' COMMENT '廠商傳真',
   `lunch_factory_addr` varchar(255) NOT NULL default '' COMMENT '廠商地址',
 PRIMARY KEY (`lunch_sn`)
-) ENGINE=MyISAM;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tad_lunch2_data` (
   `lunch_data_sn` mediumint(9) unsigned NOT NULL auto_increment COMMENT '流水號',
   `lunch_target` varchar(255) NOT NULL default '' COMMENT '對象',
   `lunch_sn` smallint(6) unsigned NOT NULL default '0' COMMENT '廠商',
-  `lunch_date` date NOT NULL default '0000-00-00' COMMENT '日期',
+  `lunch_date` date NOT NULL COMMENT '日期',
   `main_food` varchar(255) NOT NULL default '' COMMENT '主食',
   `main_food_stuff` varchar(255) NOT NULL default '' COMMENT '主食食材',
   `main_dish` varchar(255) NOT NULL default '' COMMENT '主菜',
@@ -38,7 +38,7 @@ CREATE TABLE `tad_lunch2_data` (
   `calorie` smallint(6) unsigned NOT NULL default '0' COMMENT '總熱量',
   PRIMARY KEY (`lunch_data_sn`),
   UNIQUE KEY `date_target` (`lunch_target`,`lunch_date`)
-) ENGINE=MyISAM;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tad_lunch2_files_center` (
   `files_sn` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '檔案流水號',
@@ -55,4 +55,4 @@ CREATE TABLE `tad_lunch2_files_center` (
   `hash_filename` varchar(255) NOT NULL default '' COMMENT '加密檔案名稱',
   `sub_dir` varchar(255) NOT NULL default '' COMMENT '檔案子路徑',
   PRIMARY KEY (`files_sn`)
-) ENGINE=MyISAM;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;

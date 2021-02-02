@@ -1,4 +1,6 @@
 <?php
+
+xoops_loadLanguage('main', 'tadtools');
 //需加入模組語系
 define('_TAD_NEED_TADTOOLS', '需要 tadtools 模組，可至<a href="http://campus-xoops.tn.edu.tw/modules/tad_modules/index.php?module_sn=1" target="_blank">XOOPS輕鬆架</a>下載。');
 define('_MD_TADLUNCH2_SMNAME1', '營養午餐公告');
@@ -41,7 +43,7 @@ define('_MD_TADLUNCH2_CALORIE', '總熱量');
 define('_MD_TAD_LUNCH2_DATA_FORM', '營養午餐內容管理');
 define('_MD_TAD_LUNCH2_DATA_IMPORT', '快速匯入');
 define('_MD_TAD_LUNCH2_DATA_IMPORT_FILE', '請上傳Excel檔：');
-define('_MD_TAD_LUNCH2_DATA_IMPORT_FILE_DESC', '請按照<a href="demo.xls">範例格式</a>來製作上傳');
+define('_MD_TAD_LUNCH2_DATA_IMPORT_FILE_DESC', '請按照<a href="demo.xlsx">範例格式</a>來製作上傳');
 define('_MD_TAD_LUNCH2_DATA_IMPORT_OK', '匯入完成！');
 define('_MD_TAD_LUNCH2_DATA_MENU', '「%s」%s菜單');
 define('_MD_TAD_LUNCH2_DATA_SHORT_MENU', '%s菜單');

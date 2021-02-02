@@ -1,6 +1,5 @@
 <?php
-include_once XOOPS_ROOT_PATH . "/modules/tadtools/language/{$xoopsConfig['language']}/modinfo_common.php";
-
+xoops_loadLanguage('modinfo_common', 'tadtools');
 define('_MI_TADLUNCH2_NAME', 'Nutritious Lunch Bulletin');
 define('_MI_TADLUNCH2_AUTHOR', 'Tad');
 define('_MI_TADLUNCH2_CREDITS', 'Tad');
@@ -32,7 +31,7 @@ define('_MI_TADLUNCH2_SHOW_KIND', 'Module list is displayed category');
 define('_MI_TADLUNCH2_SHOW_KIND_DESC', 'If not selected, only show a simple" rice "," carrot onion scrambled eggs "... this kind of food names instead showed off the" Basic food "," entree "... and other category name ');
 
 define('_MI_TADLUNCH2_DIRNAME', basename(dirname(dirname(__DIR__))));
-define('_MI_TADLUNCH2_HELP_HEADER', __DIR__ . '/help/helpheader.html');
+define('_MI_TADLUNCH2_HELP_HEADER', __DIR__ . '/help/helpheader.tpl');
 define('_MI_TADLUNCH2_BACK_2_ADMIN', 'Back to Administration of ');
 
 //help

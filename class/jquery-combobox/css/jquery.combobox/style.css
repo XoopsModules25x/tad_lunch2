@@ -13,7 +13,6 @@
     margin-right: 0.1em;
 }
 .combobox_arrow{
-  
 
     background: transparent url("down-arrow.png") no-repeat center center;
     display: block;
@@ -57,7 +56,7 @@
 .combobox_selector {
     background-color: #EEE;
     font-family: Helvetia, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 0.8em;
     z-index: 1000;
     max-height: 200px;
     overflow: auto;
@@ -79,4 +78,3 @@
     background-color: #0066CC;
     color: #FFF;
 }
-

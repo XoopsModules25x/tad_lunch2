@@ -4,7 +4,6 @@
  * (c) 2013 Adam Shaw
  */
 
-
 .fc {
 	direction: ltr;
 	text-align: left;
@@ -25,8 +24,6 @@ html .fc,
 	padding: 0;
 	vertical-align: top;
 	}
-
-
 
 /* Header
 ------------------------------------------------------------------------*/
@@ -95,8 +92,6 @@ html .fc,
 	z-index: 4;
 	}
 
-
-
 /* Content
 ------------------------------------------------------------------------*/
 
@@ -108,8 +103,6 @@ html .fc,
 	width: 100%; /* needed for view switching (when view is absolute) */
 	overflow: hidden;
 	}
-
-
 
 /* Cell Styles
 ------------------------------------------------------------------------*/
@@ -128,8 +121,6 @@ html .fc,
 	opacity: .3;
 	filter: alpha(opacity=30); /* for IE */
 	}
-
-
 
 /* Buttons
 ------------------------------------------------------------------------*/
@@ -246,8 +237,6 @@ html .fc,
 	box-shadow: none;
 	}
 
-
-
 /* Global Event Styles
 ------------------------------------------------------------------------*/
 
@@ -255,7 +244,7 @@ html .fc,
 	border: 1px solid #3a87ad; /* default BORDER color */
 	background-color: #3a87ad; /* default BACKGROUND color */
 	color: #fff;               /* default TEXT color */
-	font-size: 12px;
+	font-size: 0.8em;
 	cursor: default;
 	}
 
@@ -295,8 +284,6 @@ a.fc-event,
 	font-size: 300%;  /* */
 	line-height: 50%; /* */
 	}
-
-
 
 /* Horizontal Events
 ------------------------------------------------------------------------*/
@@ -342,8 +329,6 @@ a.fc-event,
 	_padding-bottom: 14px; /* IE6 had 0 height */
 	}
 
-
-
 /* Reusable Separate-border Table
 ------------------------------------------------------------*/
 
@@ -370,8 +355,6 @@ table.fc-border-separate {
 .fc-border-separate tbody tr.fc-first th {
 	border-top-width: 0;
 	}
-
-
 
 /* Month View, Basic Week View, Basic Day View
 ------------------------------------------------------------------------*/
@@ -422,8 +405,6 @@ table.fc-border-separate {
 .fc-rtl .fc-grid .fc-event-time {
 	float: right;
 	}
-
-
 
 /* Agenda Week View, Agenda Day View
 ------------------------------------------------------------------------*/
@@ -514,8 +495,6 @@ table.fc-border-separate {
 	*border-top-style: solid; /* doesn't work with background in IE6/7 */
 	}
 
-
-
 /* Vertical Events
 ------------------------------------------------------------------------*/
 
@@ -570,7 +549,7 @@ table.fc-border-separate {
 	height: 8px      !important;
 	overflow: hidden !important;
 	line-height: 8px !important;
-	font-size: 11px  !important;
+	font-size: 0.78em  !important;
 	font-family: monospace;
 	text-align: center;
 	cursor: s-resize;
@@ -579,5 +558,3 @@ table.fc-border-separate {
 .fc-agenda .ui-resizable-resizing { /* TODO: better selector */
 	_overflow: hidden;
 	}
-
-
